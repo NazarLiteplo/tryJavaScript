@@ -20,11 +20,27 @@ function decision(a, b, c){
     }
 }
 
-function read(){
+function readInput(){
     var a = document.forms.form1.a.value;
     var b = document.forms.form1.b.value;
     var c = document.forms.form1.c.value;
+    if( isNaN(a) || isNaN(b) || isNaN(c)){
+        alert('Не корректний ввід даних');
+    }else{
+        if(a == 0){
+            alert('Це рівняння не квадратне');
+        }else
+            if(b == 0){
+                alert('Це рівняння не квадратне');
+            }else
+                if(c == 0){
+                    alert('Це рівняння не квадратне');
+                }else
+                    decision(a, b, c);
+    }
+       //decision(a, b, c);
    // alert('a=' + a + '  b=' + b + '  c=' + c);
-   decision(a, b, c);
+   
+   
 }
 

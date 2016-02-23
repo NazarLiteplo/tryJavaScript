@@ -3,21 +3,26 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <title>js </title>
         
     </head>
     <body>
+        <div class="center">
         <form name="form1">
             <fieldset>
                 <legend>Квадратне рівняння</legend>
-                <div>
+                <div align="center">
                 <input class="textinput" type="text" name="a" value="1"/>x<sup>2</sup>&nbsp;+&nbsp;
                 <input class="textinput" type="text" name="b" value="1"/>x&nbsp;+&nbsp;
                 <input class="textinput" type="text" name="c" value="1"/>&nbsp;=&nbsp;0
                 </div>
-                <input id="button" type="submit" name="button" OnClick = "read()" value="Розв'язати квадратне рівняння"/>
+                <div align="center">
+                <input id="button" type="submit" name="button" OnClick = "readInput()" value="Розв'язати квадратне рівняння"/>
+                </div>
             </fieldset>
         </form>
+        </div>
         <script type="text/javascript" src="script/script.js"></script>
         <script>
            // decision(4,15,1);
