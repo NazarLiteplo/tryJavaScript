@@ -1,21 +1,17 @@
 // JavaScript File
 
-
-
 function decision(a, b, c){
     var d = Math.pow(b, 2) - 4 * a * c; 
     if(d == 0){
-        var x = -b / 2 * a;
-        alert(x);
+        var x = -b / (2 * a);
+        alert('x= ' + x);
     }
     if(d < 0){
         alert("Коренів немає");
     }
     if(d > 0){
-        //alert('d=' + d);
-        
         var x1 = (-b + (Math.sqrt(d)) ) / (2 *a);
-        var x2 = (-b - Math.sqrt(d) ) / (2 *a);
+        var x2 = (-b - (Math.sqrt(d)) ) / (2 *a);
         alert('x1= ' + x1 + '   x2= ' + x2);
     }
 }
@@ -38,9 +34,5 @@ function readInput(){
                 }else
                     decision(a, b, c);
     }
-       //decision(a, b, c);
-   // alert('a=' + a + '  b=' + b + '  c=' + c);
-   
-   
 }
 
